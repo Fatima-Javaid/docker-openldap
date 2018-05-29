@@ -1,8 +1,8 @@
 FROM debian:stretch
 
-MAINTAINER Christian Luginbühl <dinkel@pimprecords.com>
+#MAINTAINER Christian Luginbühl <dinkel@pimprecords.com>
 
-ENV OPENLDAP_VERSION 2.4.44
+ENV OPENLDAP_VERSION 2.4.46
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
