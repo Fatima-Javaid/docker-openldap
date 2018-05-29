@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:stretch-backports
 
 #MAINTAINER Christian Luginbühl <dinkel@pimprecords.com>
 
