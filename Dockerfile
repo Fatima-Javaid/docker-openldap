@@ -6,9 +6,9 @@ ENV OPENLDAP_VERSION 2.4.46
 
 RUN apt-get update && \
 #    apt-get upgrade libldap-2.4-2 && \
-    DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
-        apt-get -f install slapd -y && \
-        #slapd=${OPENLDAP_VERSION}* && \
+    DEBIAN_FRONTEND=noninteractive apt-get -f install slapd -y && \
+    #    apt-get install --no-install-recommends -y \
+    #    slapd=${OPENLDAP_VERSION}* && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
