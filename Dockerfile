@@ -5,7 +5,7 @@ FROM debian:stretch-backports
 ENV OPENLDAP_VERSION 2.4.46
 
 RUN apt-get update && \
-    apt-get -f install  libldap-2.4-2 -y && \
+    noninteractive apt-get install libldap-2.4-2 --no-install-recommends -y \
     apt-get -f install slapd -y && \
 #    apt-get upgrade libldap-2.4-2 && \
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
